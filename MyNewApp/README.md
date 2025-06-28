@@ -25,6 +25,10 @@ In the output, you'll find options to open the app in a
 
 You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
 
+This project also contains a very simple counter screen which you can find in
+`app/(tabs)/counter.tsx`. A "Counter" tab has been added to the bottom
+navigation so you can experiment with basic React state handling.
+
 ## Get a fresh project
 
 When you're ready, run:
@@ -34,6 +38,29 @@ npm run reset-project
 ```
 
 This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+
+## Run lint checks
+
+This starter does not include automated tests yet, but you can run the built-in
+lint rules to verify the project:
+
+```bash
+npm run lint
+```
+
+The command uses Expo's lint configuration to check your TypeScript and
+JavaScript files.
+
+## Build an Android APK
+
+If you have Android Studio installed, you can generate an APK for testing with:
+
+```bash
+npx expo run:android --variant release
+```
+
+This will prebuild the native project if needed and assemble a release APK in
+`android/app/build/outputs/apk/release`.
 
 ## Learn more
 
